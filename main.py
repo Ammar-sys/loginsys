@@ -2,8 +2,25 @@ import json
 from tkinter import *
 import time
 
-with open("js0n.json", "r") as f:
+with open("specify_your_json_file_path.json", "r") as f:
     data = json.load(f)
+    
+"""
+json file should look like this when its empty:
+
+{
+
+}
+
+once you register/add a password it should look like this
+
+{
+  "heyyourecool": {
+    "password": "password1"
+  }
+}
+
+"""
 
 m = []
 for name in data:
