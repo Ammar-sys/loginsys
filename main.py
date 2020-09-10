@@ -2,6 +2,8 @@ import json
 from tkinter import *
 import time
 
+# you need to download tkinter and time i think, json is preinstalled afaik
+
 with open("specify_your_json_file_path.json", "r") as f:
     data = json.load(f)
     
